@@ -1,0 +1,28 @@
+### this is you local repo you want to analyze
+loc_repo_path: ./examples/repo/guava
+
+### the link of the remote repo
+remote_repo_path: https://github.com/google/guava
+
+### the path to save results
+save_result_path: ./examples/results
+
+### the pre-commit
+parent_commit: 9e54741abdccb0eb10cb1b3e3ccd98485e202db0
+
+### the static warning report path of the pre-commit revision (xml format)
+parent_report_path: ./examples/reports/9e54741.xml
+
+### the post-commit
+child_commit: a01998946b92508ab53b3fc8939744c1061dd135
+
+### the static warning report path of the post-commit revision (xml format)
+child_report_path: ./examples/reports/a019989.xml
+
+
+# PMD or Spotbugs
+static_tool: Spotbugs
+
+# we use refactoringMiner to detect refactoring instances, so it requires its jars and dependencies. 
+java_jar_path: ./refactoringJava/out/production/refactoringJava
+java_dependency_path: ./RefactoringMiner/RefactoringMiner-2.0.2/lib

@@ -1,0 +1,6 @@
+GitPython==3.1.31
+JPype1==1.4.1
+munkres==1.1.4
+numpy==1.23.0
+pandas==1.0.5
+PyYAML==6.0
